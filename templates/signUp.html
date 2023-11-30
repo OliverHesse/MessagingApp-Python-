@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block TitleData %}
+  Sign Up
+{% endblock %}
+
+{% block Content %}
+  <form action="{{ url_for('signUp') }}" method="post">
+  <label for="Username">Username:</label><br>
+  <input type="text" id="Username" name="Username"></input><br>
+  <label for="Password">Password:</label><br>
+  <input type="password" id="Password" name="Password"><br>
+  <p>already have an account? Login <a href="login">Here</a></p>
+  <input type="submit" value="Sign Up"></input><br>
+  <label for= "none">{{data}}</label>
+  </form>
+  <!-- <p>dont have an acocunt? Sign Up </p><p><a href="signUp">Here</a></p>-->
+{% endblock %}

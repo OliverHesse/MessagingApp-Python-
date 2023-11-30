@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+    <div id = "leftContainer" class="BaseSideContainer BaseContainer hideLeft">
+      <div id = "UserBar" class = "baseBar">
+        
+        <button id="addFriends" onclick="loadAddFriend()">add more friends</button>
+        <div id = "holder" tabindex="1" onclick= "showLogOut()">
+          <div id= "menu">
+            <div class = "dot"></div>
+            <div class = "dot"></div>
+            <div class = "dot"></div>
+          </div>
+          <div id ="dropDownMenue" class="dropdown-content dropdown-content-hide">
+            <a class = "refC" href = "/CreateGroupChat">Create Group</a><br>
+            <a class = "refC"href="/logOut">Log Out</a>
+            
+          </div>
+        </div>
+      </div>
+      <div id = "FriendsContainer">
+
+      </div>
+    </div>
+    <div class = "line"></div>
+    <div id = "centerContainer" class="BaseContainer">
+      <div id = "selectedUser" class = "baseBar">
+        <button id ="loadUser" onclick = "loadUser()">load user</button>
+        <button  id ="loadFriend"onclick = "loadFriend()">load Friend</button>
+        
+      </div>
+      <div id = "chatContainer"></div>
+      <div id = "inputContainer">
+        <input type = "text" id = "inputBox"></input>
+        <button id = "sendMessage" onclick= "sendMessage()">Send</button>
+      </div>
+    </div>
+    <div class = "line"></div>
+    <div id = "rightContainer" class="BaseSideContainer BaseContainer hideRight">
+      <div id = "FriendProfileBar" class = "baseBar">
+        <button id = "closeFriendProfile" onclick= "closeFriendPage()">close</button>
+      </div>
+      
+    </div>
+  
+</body>
+
+<script src="{{ url_for('static', filename='MainPage.js') }}">
+
+</script>
+</html>

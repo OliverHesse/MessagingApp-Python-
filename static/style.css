@@ -1,0 +1,220 @@
+body{
+  width:100%;
+  height:100%;
+  position:fixed;
+  display: flex;
+  background-color: greenyellow;
+  justify-content:center;
+  align-items:center;
+  margin:0px;
+  padding:0px;
+}
+.baseBar{
+  width:100%;
+  min-height:100px;
+  background: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(0,0,0,1) 100%);
+  position:relative;
+}
+#holder{
+  position:absolute;
+  right:10px;
+  top:5px;
+  width:auto;
+}
+#menu{
+  
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+.dropdown-content{
+  flex-shrink:0;
+  position:absolute;
+  right:0px;
+  top:32px;
+  display:block;
+  background-color:#8c8c8c;
+  border-color:black;
+  border-width:2px;
+  min-width:100px;
+  
+  
+}
+.refC{
+   text-decoration: none;
+  color:black;
+}
+.dropdown-content-hide{
+  display:none !important;
+}
+
+.dot{
+  flex-shrink:0;
+  width:8px;
+  height:8px;
+  border-radius:4px;
+  background-color:#53556a;
+}
+.line{
+  min-width:1px;
+  height:100%;
+  display:inline;
+  background-color:black;
+}
+.BaseContainer{
+  
+  background-color: rgb(120,120,120);
+  height:100%;
+  min-width:600px;
+  
+}
+
+#centerContainer{
+  display: flex;
+  flex-grow:1;
+  flex-direction:column;
+}
+#selectedUser{
+  flex-shrink:0px;
+}
+#chatContainer{
+  
+  flex-grow:1;
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+  width:100%;
+  min-height:300px;
+}
+.baseMessageContainer{
+  width:100%
+}
+.MessageContainerOther{
+  display: flex;
+  justify-content: left;
+}
+.MessageContainerSelf{
+  display: flex;
+  justify-content: right;
+}
+.messageBase{
+  margin-top:20px;
+  border-radius:10px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  white-space: pre-wrap;
+  max-width:70%;
+  overflow-wrap:break-word;
+}
+.messageOther{
+  background-color: lightblue;
+  margin-left:10px;
+}
+.messageSelf{
+  background-color: lightgreen;
+  margin-right:10px;
+}
+#inputContainer{
+  background-color: #3e3c3c;
+  flex-shrink:0px;
+  display:flex;
+  width:100%;
+  min-height:100px;
+  display:flex;
+  
+  align-items:center;
+}
+#inputBox{
+  flex-shrink:0;
+  min-height:40px;
+  max-height:40px;
+  min-width:300px;
+
+
+}
+#sendMessage{
+
+  min-width:50px;
+  min-height:35px;
+  max-height:35px;
+}
+#FriendsContainer{
+  width:100%;
+  height:100%;
+  overflow:auto;
+  display:flex;
+  flex-direction:column;
+}
+.Friend{
+  flex-shrink:0px;
+  margin: 0px;
+  padding: 0px;
+  flex-shrink: 0;
+  width: 100%;
+  height:100px;
+  background-color:grey;
+  border-width:0px;
+
+  border-bottom-width:2px;
+  
+  border-color: #616161;
+  border-style: solid;
+}
+.FriendFocused{
+  background-color:#969696;
+}
+
+.hideRight{
+  display: none;
+
+}
+.hideLeft{
+  display: inline;
+}
+
+#testBtn{
+  position:absolute;
+  right:0px;
+}
+
+#closeUser{
+  display:none;
+}
+@media screen and (max-width: 600px) {
+  .hideLeft {
+    display: none;
+  }
+
+  #closeUser{
+    display:inline-block;
+  }
+  #loadUser{
+    display:inline-block;
+  }
+  .hideCenter{
+    display: none !important;
+  }
+  .line{
+    display:none;
+  }
+  .BaseContainer{
+    min-width:300px;
+    width:100%;
+  }
+}
+@media screen and (min-width: 600px) {
+
+  #loadUser{
+    display:none;
+  }
+  .line{
+    display:inline;
+  }
+  #inputBox{
+    max-width:500px;
+    width:100%;
+  }
+}
+}

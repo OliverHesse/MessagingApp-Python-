@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="{{ url_for('static', filename='addFriendStyle.css') }}"rel="stylesheet" type="text/css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+</head>
+<body>
+<div class = "Header">
+  <button id ="backButton" onclick = "goBack()">Back</button>
+</div>
+<div class= "MainContainer">
+  <div id = "wrapperDiv">
+    <div id = "enterWrapper">
+      <div id = "usernameWrapper">
+      <label for="Username">Username:</label>
+      </div>
+    <div class = "enterContainer">
+        
+        <input type="text" id="Username" name="Username" class ="enterBox"</input>
+        <button id = "searchBtn" onclick = "searchUsers()">search</button>
+        
+      </div>
+      <label id = "errorMessage" for= "none"></label>
+    </div>
+    <div id = "usersContainer">
+      
+    </div>
+  </div>
+</div>
+  
+</body>
+<script src="{{ url_for('static', filename='addToChat.js') }}"></script>
+</html>

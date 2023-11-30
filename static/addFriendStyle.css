@@ -1,0 +1,121 @@
+body{
+  width:100%;
+  height:100%;
+  position:fixed;
+  display: flex;
+  background-color: greenyellow;
+  flex-direction:column;
+  margin:0px;
+  padding:0px;
+}
+.Header{
+  width:100%;
+  min-height:100px;
+  background: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(0,0,0,1) 100%);
+}
+.MainContainer{
+  width:100%;
+  flex-grow:1;
+  background-color: rgb(120,120,120);
+  display:flex;
+  justify-content:center
+  
+}
+#moreDiv{
+  display: flex;
+  justify-content: center;
+}
+#moreButton{
+  width: 100px;
+  
+}
+.pending{
+  color: white;
+  background-color: rgba(4, 15, 178, 0.8);
+}
+.pending:hover{
+  background-color: rgba(25, 37, 215, 0.8);
+}
+.send{
+  background-color: rgba(218, 218, 218, 0.8);
+}
+.send:hover{
+  background-color: white;
+}
+#errorMessage{
+  min-height:20px;
+}
+#wrapperDiv{
+  height:100%;
+  max-width:800px;
+  width:100%;
+  min-width:300px;
+}
+#enterWrapper{
+  width:100%;
+  min-height:100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+#usernameWrapper{
+  min-width:348px;
+}
+.enterContainer{
+  min-height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.enterBox{
+  min-width:300px;
+  max-height:30px;
+  min-height:30px;
+}
+#searchBtn{
+  max-height:20px;
+  max-width:50px;
+}
+.baseName{
+  position: absolute;
+  left: 20px;
+}
+.baseText{
+  position:absolute;
+  right:20px
+}
+#usersContainer{
+  min-width:300px;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color: rgb(120,120,120);
+}
+.baseButton{
+  position:absolute;
+  right:20px;
+  width:120px;
+  height:30px;
+  border-radius:15px;
+  border-width: 0;
+}
+#user_Container{
+  flex-shrink: 0;
+  display:flex;
+  position: relative;
+  align-items:center;
+  min-width: 300px;
+  width:100%;
+  height: 40px;
+  color:white;
+  display: flex;
+  margin-top:10px;
+  
+  flex-direction: row;
+  border-color: grey;
+  background-color:grey;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+
+}
